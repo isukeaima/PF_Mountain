@@ -25,3 +25,6 @@
 - フレームワーク：Ruby on Rails
 - JSライブラリ：jQuery
 - IDE：Cloud9
+
+##使用素材
+冒険は引用レタリングを待っています pngから .pngtree.com/
