@@ -1,24 +1,27 @@
-# README
+# 山友
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+登山が趣味の方むけのSNSアプリケーションです、写真の投稿や行った場所をGoogliMapで共有、またその投稿にコメントしたりいいねができます。
 
-Things you may want to cover:
 
-* Ruby version
+### サイトテーマ
+登山者同士で繋がる輪
 
-* System dependencies
+### テーマを選んだ理由
+登山が趣味で気軽に同じ趣味の方と交流できるようなSNSを提供したいと思い選びました
 
-* Configuration
+### ターゲットユーザ
+学生から社会人まで登山が趣味の方
 
-* Database creation
+### 主な利用シーン
+登山中、頂上の写真投稿等
 
-* Database initialization
+## チャレンジ要素一覧
+<https://docs.google.com/spreadsheets/d/1E4Quehglf9PxM1XTE-ft2X5-hJ5dmoJhsI-UJlgzVmY/edit#gid=0>
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
