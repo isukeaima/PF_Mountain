@@ -720,3 +720,718 @@ Processing by HomesController#top as HTML
 Completed 200 OK in 88ms (Views: 87.2ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/post_images/new" for 125.12.241.186 at 2021-10-14 08:23:18 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 89ms (Views: 84.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for 125.12.241.186 at 2021-10-14 08:23:18 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ebGWC8b+xRNm09jqkXDNRsB7wS9Besl0Bjs80I7JSjrYgn+Z9We6cqY0OiNwO8B7yhvOb+33PC9YEXTM5E9nuQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://3e7bd5b009b74bd1b2152c782af8a9c6.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 16ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 125.12.241.186 at 2021-10-14 08:23:19 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 125.12.241.186 at 2021-10-14 08:23:20 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 153ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 125.12.241.186 at 2021-10-14 08:23:28 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ms3wOz7ssDjQL3x7CLdtfFHPfbMfpqwtMXI8uPtP09Sl8ayqOq37epSiTfFtBVBWb1sos+vv7MAsIOnWJ3qvLA==", "user"=>{"email"=>"a@a", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://3e7bd5b009b74bd1b2152c782af8a9c6.vfs.cloud9.ap-northeast-1.amazonaws.com/post_images
+Completed 302 Found in 317ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/post_images" for 125.12.241.186 at 2021-10-14 08:23:28 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/_list.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (12.4ms)
+  Rendered post_images/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 106ms (Views: 101.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_images/1" for 125.12.241.186 at 2021-10-14 08:23:37 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:23
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:31
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:32
+  Rendered post_images/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:24:30 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (9.6ms)
+  Rendered users/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 128ms (Views: 121.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/post_images/new" for 125.12.241.186 at 2021-10-14 08:24:32 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 88.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/post_images/new" for 125.12.241.186 at 2021-10-14 08:24:34 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 89ms (Views: 85.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:24:34 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (9.7ms)
+  Rendered users/show.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 104ms (Views: 98.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 125.12.241.186 at 2021-10-14 08:24:37 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:24:38 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (9.8ms)
+  Rendered users/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 101ms (Views: 95.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:25:19 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.5ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (10.5ms)
+  Rendered users/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 115ms (Views: 108.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_images/1" for 125.12.241.186 at 2021-10-14 08:25:22 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:23
+  Rendering post_images/show.html.erb within layouts/application
+  Rendered post_images/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/mountain/app/views/post_images/show.html.erb:2: syntax error, unexpected ')'
+...age, :image, :fill, 100, 100, );@output_buffer.safe_append='
+...                              ^
+/home/ec2-user/environment/mountain/app/views/post_images/show.html.erb:55: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ec2-user/environment/mountain/app/views/post_images/show.html.erb:57: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/post_images/show.html.erb:2: syntax error, unexpected ')'
+app/views/post_images/show.html.erb:55: syntax error, unexpected ensure, expecting ')'
+app/views/post_images/show.html.erb:57: syntax error, unexpected end, expecting ')'
+Started GET "/post_images/1" for 125.12.241.186 at 2021-10-14 08:26:10 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:23
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:31
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:32
+  Rendered post_images/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 108ms (Views: 101.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/attachments/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" for 125.12.241.186 at 2021-10-14 08:26:10 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:27:32 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" for 125.12.241.186 at 2021-10-14 08:28:04 +0000
+Started GET "/" for 125.12.241.186 at 2021-10-14 08:28:04 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Refile::App: Error -> `magick convert -resize 100x100^ -gravity Center -extent 100x100 /tmp/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a20211014-4889-1ae5uh1 /tmp/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a20211014-4889-1ae5uh1` failed with error:
+
+Refile::App: Error -> `magick convert -resize 100x100^ -gravity Center -extent 100x100 /tmp/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a20211014-4889-llyel4 /tmp/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a20211014-4889-llyel4` failed with error:
+
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mUser Load (204.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:77:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:62:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendered homes/top.html.erb within layouts/application (909.1ms)
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:77:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:62:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-10-14 08:29:59 +0000] GET "/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" 500 229117.4ms
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+Refile::App: [2021-10-14 08:29:59 +0000] GET "/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" 500 88732.5ms
+
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (1.5ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (29.9ms)
+  Rendered users/show.html.erb within layouts/application (128.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 77432ms (Views: 997.0ms | ActiveRecord: 206.7ms)
+
+
+Completed 200 OK in 80381ms (Views: 40126.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 125.12.241.186 at 2021-10-14 08:31:18 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 709ms (Views: 698.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_images/new" for 125.12.241.186 at 2021-10-14 08:33:42 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 115ms (Views: 96.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:33:44 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (18.0ms)
+  Rendered users/show.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 167ms (Views: 145.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post_images/1" for 125.12.241.186 at 2021-10-14 08:33:53 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:23
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:31
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:32
+  Rendered post_images/show.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 132ms (Views: 117.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/attachments/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" for 125.12.241.186 at 2021-10-14 08:33:53 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Error -> `magick convert -resize 100x100^ -gravity Center -extent 100x100 /tmp/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a20211014-8586-5y9s04 /tmp/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a20211014-8586-5y9s04` failed with error:
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/shell.rb:17:in `run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:92:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/mini_magick-4.11.0/lib/mini_magick/tool.rb:38:in `new'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:77:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:62:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-10-14 08:35:36 +0000] GET "/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" 500 103015.8ms
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:49:00 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (43.2ms)
+  Rendered users/show.html.erb within layouts/application (424.5ms)
+Completed 200 OK in 626ms (Views: 570.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/post_images/new" for 125.12.241.186 at 2021-10-14 08:49:13 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 110ms (Views: 105.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 125.12.241.186 at 2021-10-14 08:49:14 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/_list.html.erb:20
+  Rendered post_images/_list.html.erb (12.8ms)
+  Rendered users/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 134ms (Views: 127.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/post_images/1" for 125.12.241.186 at 2021-10-14 08:49:19 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:23
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:31
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/views/post_images/show.html.erb:32
+  Rendered post_images/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 119ms (Views: 106.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/attachments/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" for 125.12.241.186 at 2021-10-14 08:49:20 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started DELETE "/post_images/1" for 125.12.241.186 at 2021-10-14 08:53:11 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DROLcfJh9/6Yt+eC2DMH+j8QXHAr49YMUBfkc5L3NhimNlQ3qYVrcfkU7tFjFL4+GVarKXDPEh3056vosMDY+A==", "id"=>"1"}
+  [1m[36mUser Load (1007.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostImage Load (157.6ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Refile::App: [2021-10-14 08:54:29 +0000] GET "/6d72dd04c1e62dee39c3d077e5758e1a43063b24/store/fill/100/100/9bd35c3daeeddc41463fbfebfaed39f661c207ce571adb915efbfc67c18a/image" 200 309433.4ms
+
+  ↳ app/controllers/post_images_controller.rb:28
+  [1m[35m (149.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:29
+  [1m[36mPostComment Load (0.2ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/controllers/post_images_controller.rb:29
+  [1m[36mFavorite Load (65.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 1]]
+  ↳ app/controllers/post_images_controller.rb:29
+  [1m[36mFavorite Destroy (92.0ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/post_images_controller.rb:29
+  [1m[36mPostImage Destroy (0.2ms)[0m  [1m[31mDELETE FROM "post_images" WHERE "post_images"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/post_images_controller.rb:29
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:29
+Redirected to https://3e7bd5b009b74bd1b2152c782af8a9c6.vfs.cloud9.ap-northeast-1.amazonaws.com/post_images
+Completed 302 Found in 37713ms (ActiveRecord: 1486.2ms)
+
+
