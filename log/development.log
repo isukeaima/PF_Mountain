@@ -3170,3 +3170,505 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 127ms (Views: 120.7ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/users/2" for 125.12.241.186 at 2021-10-16 06:58:18 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."user_id" = ? ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 2], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  Rendered post_images/_list.html.erb (4.8ms)
+  Rendered users/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 131ms (Views: 103.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 06:58:20 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:00:37 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':'
+...append=( render 'info', user: : @user );@output_buffer.safe_...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:01:00 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+....append=( render 'info', user : @user );@output_buffer.safe_...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:04:15 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+...r 'users/follow_button', user : @user );@output_buffer.safe_...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:04:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+... render 'follow_button', user : @user );@output_buffer.safe_...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:04:56 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+...render 'follow_button', users : @users );@output_buffer.safe...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:05:06 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+...render 'follow_button', users : @users );@output_buffer.safe...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:05:11 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF_Mountain/app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+... render 'follow_button', user : @users );@output_buffer.safe...
+...                              ^):
+  
+app/views/users/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:05:28 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "no-image-icon.jpg" is not present in the asset pipeline.
+):
+     9:   <tbody>
+    10:     <% @users.each do |user| %>
+    11:       <tr>
+    12:         <td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no-image-icon.jpg") %></td>
+    13:         <td><%= user.name %></td>
+    14:         <td><% unless current_user == user %>
+    15:           <%= render 'follow_button', users: @users %>
+  
+app/views/users/index.html.erb:12:in `block in _app_views_users_index_html_erb___1801434722182950342_70218237617500'
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1801434722182950342_70218237617500'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:06:25 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "no-image-icon.jpg" is not present in the asset pipeline.
+):
+     9:   <tbody>
+    10:     <% @users.each do |user| %>
+    11:       <tr>
+    12:         <td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no-image-icon.jpg") %></td>
+    13:         <td><%= user.name %></td>
+    14:         <td><% unless current_user == user %>
+    15:           <%= render 'follow_button' %>
+  
+app/views/users/index.html.erb:12:in `block in _app_views_users_index_html_erb___1801434722182950342_70218226755780'
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1801434722182950342_70218226755780'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:06:58 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "no-image.jpg" is not present in the asset pipeline.
+):
+     9:   <tbody>
+    10:     <% @users.each do |user| %>
+    11:       <tr>
+    12:         <td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no-image.jpg") %></td>
+    13:         <td><%= user.name %></td>
+    14:         <td><% unless current_user == user %>
+    15:           <%= render 'follow_button' %>
+  
+app/views/users/index.html.erb:12:in `block in _app_views_users_index_html_erb___1801434722182950342_70218241491580'
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1801434722182950342_70218241491580'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:08:18 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/_follow_button.html.erb (294.6ms)
+  Rendered users/index.html.erb within layouts/application (302.7ms)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb9ea052318>:0x00007fb9ea6029c0>
+Did you mean?  @users):
+    1: <% if current_user.following?(user) %>
+    2:   <%= link_to "Unfollow", user_relationships_path(user.id), method: :delete %>
+    3: <% else %>
+    4:   <%= link_to "Follow", user_relationships_path(user.id), method: :post %>
+  
+app/views/users/_follow_button.html.erb:1:in `_app_views_users__follow_button_html_erb___3413048056735165891_70218238990320'
+app/views/users/index.html.erb:15:in `block in _app_views_users_index_html_erb___1801434722182950342_70218238925060'
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1801434722182950342_70218238925060'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:09:24 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/_follow_button.html.erb (309.2ms)
+  Rendered users/index.html.erb within layouts/application (322.5ms)
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb9e9d0c320>:0x00007fb9e9d219a0>
+Did you mean?  @user):
+    1: <% if current_user.following?(user) %>
+    2:   <%= link_to "Unfollow", user_relationships_path(user.id), method: :delete %>
+    3: <% else %>
+    4:   <%= link_to "Follow", user_relationships_path(user.id), method: :post %>
+  
+app/views/users/_follow_button.html.erb:1:in `_app_views_users__follow_button_html_erb___3413048056735165891_70218238652080'
+app/views/users/index.html.erb:15:in `block in _app_views_users_index_html_erb___1801434722182950342_70218234226160'
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1801434722182950342_70218234226160'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:10:08 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/_follow_button.html.erb (6.8ms)
+  Rendered users/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Relation:0x00007fb9ea1d0460>
+Did you mean?  ids):
+    1: <% if current_user.following?(user) %>
+    2:   <%= link_to "Unfollow", user_relationships_path(user.id), method: :delete %>
+    3: <% else %>
+    4:   <%= link_to "Follow", user_relationships_path(user.id), method: :post %>
+    5: <% end %>
+  
+app/views/users/_follow_button.html.erb:4:in `_app_views_users__follow_button_html_erb___3413048056735165891_70218237282980'
+app/views/users/index.html.erb:15:in `block in _app_views_users_index_html_erb___1801434722182950342_70218237245900'
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1801434722182950342_70218237245900'
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:28 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 165ms (Views: 143.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/attachments/288a9998f2dcf87aa3978c15f0d282aebc2163e1/store/fill/50/50/209addb9c49fa70bdf2c2e05aa91ab8b623b0c3aecf15dbac6eb0912f775/profile_image.jpeg" for 125.12.241.186 at 2021-10-16 07:16:29 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-16 07:16:29 +0000] GET "/288a9998f2dcf87aa3978c15f0d282aebc2163e1/store/fill/50/50/209addb9c49fa70bdf2c2e05aa91ab8b623b0c3aecf15dbac6eb0912f775/profile_image.jpeg" 200 187.3ms
+
+Started POST "/users/1/relationships" for 125.12.241.186 at 2021-10-16 07:16:31 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"lG0MhHologtD5Hc13w1FIhjWwRLKbsjYiF4OaBvSUFDEnl88iL6tgjGXuCR5j5FFdTYgmM21WkKVDNvvpTgItg==", "user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:17
+  [1m[36mRelationship Create (3.1ms)[0m  [1m[32mINSERT INTO "relationships" ("follower_id", "followed_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["follower_id", 2], ["followed_id", 1], ["created_at", "2021-10-16 07:16:31.181004"], ["updated_at", "2021-10-16 07:16:31.181004"]]
+  ↳ app/models/user.rb:17
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:17
+Redirected to https://599f55c577e74e41a4d87a1792d1d669.vfs.cloud9.ap-northeast-1.amazonaws.com/users
+Completed 302 Found in 29ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:31 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 201ms (Views: 195.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/1/relationships" for 125.12.241.186 at 2021-10-16 07:16:34 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vyYaj9Mp/gL0MaqwqQPXZ0xuzgbzS6nh5dsMLQ930env1Uk3IbLxi4ZCZaEPgQMAIY4vjPSQO3v4idmqsZ2JDw==", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mRelationship Load (0.2ms)[0m  [1m[34mSELECT  "relationships".* FROM "relationships" WHERE "relationships"."follower_id" = ? AND "relationships"."followed_id" = ? LIMIT ?[0m  [["follower_id", 2], ["followed_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:20
+  [1m[36mRelationship Destroy (1.2ms)[0m  [1m[31mDELETE FROM "relationships" WHERE "relationships"."id" = ?[0m  [["id", 4]]
+  ↳ app/models/user.rb:20
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:20
+Redirected to https://599f55c577e74e41a4d87a1792d1d669.vfs.cloud9.ap-northeast-1.amazonaws.com/users
+Completed 302 Found in 18ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:34 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/relationships" for 125.12.241.186 at 2021-10-16 07:16:34 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"wP427v92q1VfSacGb3Wkh2xZNljltoh6D8tzy3UrfsuQDWVWDe2k3C06aBfJ93DgAbnX0uJtGuASmaZMy8EmLQ==", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:17
+  [1m[36mRelationship Create (1.2ms)[0m  [1m[32mINSERT INTO "relationships" ("follower_id", "followed_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["follower_id", 2], ["followed_id", 1], ["created_at", "2021-10-16 07:16:34.970803"], ["updated_at", "2021-10-16 07:16:34.970803"]]
+  ↳ app/models/user.rb:17
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:17
+Redirected to https://599f55c577e74e41a4d87a1792d1d669.vfs.cloud9.ap-northeast-1.amazonaws.com/users
+Completed 302 Found in 26ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 157ms (Views: 154.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/1/relationships" for 125.12.241.186 at 2021-10-16 07:16:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lwy6aIW+5jiSuTnqfdirnnbhHvJMadglhUSTylpLHTHH/+nQdyXpseDK9vvbWn/5GwH/eEuySr+YFkZN5KFF1w==", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mRelationship Load (0.1ms)[0m  [1m[34mSELECT  "relationships".* FROM "relationships" WHERE "relationships"."follower_id" = ? AND "relationships"."followed_id" = ? LIMIT ?[0m  [["follower_id", 2], ["followed_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:20
+  [1m[36mRelationship Destroy (2.1ms)[0m  [1m[31mDELETE FROM "relationships" WHERE "relationships"."id" = ?[0m  [["id", 5]]
+  ↳ app/models/user.rb:20
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:20
+Redirected to https://599f55c577e74e41a4d87a1792d1d669.vfs.cloud9.ap-northeast-1.amazonaws.com/users
+Completed 302 Found in 18ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 130ms (Views: 128.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/1/relationships" for 125.12.241.186 at 2021-10-16 07:16:36 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"kAyXXJr59RFgBr8PNsVg2v5K5ITaWUWzFpL3tnrz6YTA/8TkaGL6mBJ1cB6QR7S9k6oFDt2C1ykLwCIxxBmxYg==", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:17
+  [1m[36mRelationship Create (4.1ms)[0m  [1m[32mINSERT INTO "relationships" ("follower_id", "followed_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["follower_id", 2], ["followed_id", 1], ["created_at", "2021-10-16 07:16:36.356282"], ["updated_at", "2021-10-16 07:16:36.356282"]]
+  ↳ app/models/user.rb:17
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:17
+Redirected to https://599f55c577e74e41a4d87a1792d1d669.vfs.cloud9.ap-northeast-1.amazonaws.com/users
+Completed 302 Found in 29ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:36 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 192ms (Views: 181.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/1/relationships" for 125.12.241.186 at 2021-10-16 07:16:36 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BkYNlkLURf8Dh8BheoMMIiFE1Ur36AYjxU1dh2QdjjlWtV4usE9KdnH0D3DcAdhFTKQ0wPAzlLnYH4gA2vfW3w==", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT  "relationships".* FROM "relationships" WHERE "relationships"."follower_id" = ? AND "relationships"."followed_id" = ? LIMIT ?[0m  [["follower_id", 2], ["followed_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:20
+  [1m[36mRelationship Destroy (1.9ms)[0m  [1m[31mDELETE FROM "relationships" WHERE "relationships"."id" = ?[0m  [["id", 6]]
+  ↳ app/models/user.rb:20
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:20
+Redirected to https://599f55c577e74e41a4d87a1792d1d669.vfs.cloud9.ap-northeast-1.amazonaws.com/users
+Completed 302 Found in 19ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/users" for 125.12.241.186 at 2021-10-16 07:16:37 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  Rendered users/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 165ms (Views: 162.2ms | ActiveRecord: 0.4ms)
+
+
