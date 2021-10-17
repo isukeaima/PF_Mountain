@@ -18,6 +18,14 @@
             <%= f.text_field :title, class:"form-control", placeholder:"タイトル" %>
           </div>
           <%= f.text_area :caption, class:"form-control", rows:"3", placeholder:"ここにコメント" %>
+          <div class="spot">
+            <%= f.fields_for :spot do |s| %>
+              <%= s.label :address, "レビュー場所(Google Mapで検索)", class: 'map__title' %>
+              <%= s.text_field :address, placeholder: "スポットを入力", id: "address", class: 'map__text' %>
+              <input onclick="codeAddress()", type="button", value="検索する" >
+              <div class="map" id="map" style="height: 320px; width: 640px;"></div>
+              <% end %>
+          </div>
           <hr>
           <%= f.submit '投稿', class:"btn btn-lg btn-block btn-info mt-4" %>
         <% end %>

@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_16_060137) do
+ActiveRecord::Schema.define(version: 2021_10_17_075511) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
     t.integer "post_image_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "maps", force: :cascade do |t|
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.integer "post_image_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_image_id"], name: "index_maps_on_post_image_id"
   end
 
   create_table "post_comments", force: :cascade do |t|

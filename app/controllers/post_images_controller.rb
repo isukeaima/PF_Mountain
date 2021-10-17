@@ -2,6 +2,7 @@ class PostImagesController < ApplicationController
 
   def new
       @post_image = PostImage.new
+      @post_image.build_map
   end
 
   def create
@@ -20,8 +21,12 @@ class PostImagesController < ApplicationController
   end
 
   def show
-     @post_image = PostImage.find(params[:id])
-     @post_comment = PostComment.new
+    @post_image = PostImage.find(params[:id])
+    @post_comment = PostComment.new
+    @lat = @post_image.map.latitude
+    @lng = @post_image.map.longitude
+    gon.lat = @lat
+    gon.lng = @lng
   end
 
   def destroy
