@@ -3,6 +3,7 @@ class PostImagesController < ApplicationController
   def new
       @post_image = PostImage.new
       @post_image.build_map
+
   end
 
   def create
@@ -17,7 +18,6 @@ class PostImagesController < ApplicationController
 
   def index
     @post_images = PostImage.page(params[:page]).reverse_order
-
   end
 
   def show
@@ -25,6 +25,7 @@ class PostImagesController < ApplicationController
     @post_comment = PostComment.new
     @lat = @post_image.map.latitude
     @lng = @post_image.map.longitude
+    # JavaScriptでも扱えるように、それぞれgon.latとgon.lngに代入
     gon.lat = @lat
     gon.lng = @lng
   end
@@ -38,6 +39,6 @@ class PostImagesController < ApplicationController
   private
 
   def post_image_params
-    params.require(:post_image).permit(:title, :image, :caption)
+    params.require(:post_image).permit(:title, :image, :caption, map_attributes: [:address, :latitude, :longitude])
   end
 end

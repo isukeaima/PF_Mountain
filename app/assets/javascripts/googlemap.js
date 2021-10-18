@@ -3,22 +3,30 @@ let geocoder //変数の定義
 
 function initMap(){ //コールバック関数
   geocoder = new google.maps.Geocoder() //GoogleMapsAPIジオコーディングサービスにアクセス
+  console.log(document.getElementById('map'));
+
+  let lat = 35.6594666
+  let lng = 139.7005536
   if(document.getElementById('map')){ //'map'というidを取得できたら実行
     map = new google.maps.Map(document.getElementById('map'), { //'map'というidを取得してマップを表示
-      center: {lat: 35.6594666, lng: 139.7005536}, //最初に表示する場所（今回は「渋谷スクランブル交差点」が初期値）
+      center: {lat: lat, lng: lng}, //最初に表示する場所（今回は「渋谷スクランブル交差点」が初期値）
       zoom: 15, //拡大率（1〜21まで設定可能）
     });
   }else{ //'map'というidが無かった場合
+    lat = gon.lat
+    lng = gon.lng
     map = new google.maps.Map(document.getElementById('show_map'), { //'show_map'というidを取得してマップを表示
-      center: {lat: gon.lat, lng: gon.lng}, //controllerで定義した変数を緯度・経度の値とする（値はDBに入っている）
+      center: {lat: lat, lng: lng}, //controllerで定義した変数を緯度・経度の値とする（値はDBに入っている）
       zoom: 15, //拡大率（1〜21まで設定可能）
     });
 
     marker = new google.maps.Marker({ //GoogleMapにマーカーを落とす
-      position:  {lat: gon.lat, lng: gon.lng}, //マーカーを落とす位置を決める（値はDBに入っている）
+      position:  {lat: lat, lng: lng}, //マーカーを落とす位置を決める（値はDBに入っている）
       map: map //マーカーを落とすマップを指定
     });
   }
+　document.getElementById('post_image_lat').setAttribute('value', lat)
+  document.getElementById('post_image_lon').setAttribute('value', lng)
 }
 
 function codeAddress(){ //コールバック関数
@@ -37,6 +45,8 @@ function codeAddress(){ //コールバック関数
           map: map, //マーカーを落とすマップを指定
           position: results[0].geometry.location //マーカーを落とす位置を決める
       });
+      document.getElementById('post_image_lat').setAttribute('value', lat)
+      document.getElementById('post_image_lon').setAttribute('value', lng)
     } else {
       alert('該当する結果がありませんでした');
     }

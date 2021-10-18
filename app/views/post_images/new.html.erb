@@ -11,6 +11,8 @@
         <% end %>
         <%= form_with model: @post_image, local:true do |f| %>
           <%= f.attachment_field :image, class: "w-100" %>
+          <%= f.hidden_field :lat, name: "post_image[map_attributes][latitude]" %>
+          <%= f.hidden_field :lon, name: "post_image[map_attributes][longitude]"  %>
           <div class="input-group mb-3 mt-4">
             <div class="input-group-prepend">
               <span class="input-group-text" aria-hidden="true"><i class="fas fa-building"></i></span>
@@ -19,12 +21,13 @@
           </div>
           <%= f.text_area :caption, class:"form-control", rows:"3", placeholder:"ここにコメント" %>
           <div class="spot">
-            <%= f.fields_for :spot do |s| %>
-              <%= s.label :address, "レビュー場所(Google Mapで検索)", class: 'map__title' %>
-              <%= s.text_field :address, placeholder: "スポットを入力", id: "address", class: 'map__text' %>
+            <%= f.fields_for :map do |m| %>
+              <%= m.label :address, "レビュー場所(Google Mapで検索)", class: 'map__title' %>
+              <%= m.text_field :address, placeholder: "スポットを入力", id: "address", class: 'map__text' %>
+               <!--buttonをクリックしたらcodeAddressを実行-->
               <input onclick="codeAddress()", type="button", value="検索する" >
               <div class="map" id="map" style="height: 320px; width: 640px;"></div>
-              <% end %>
+              <% end%>
           </div>
           <hr>
           <%= f.submit '投稿', class:"btn btn-lg btn-block btn-info mt-4" %>
