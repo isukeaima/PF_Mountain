@@ -109,4 +109,5 @@ gem "gmaps4rails"
 gem "geocoder"
 # Get your Rails variables in your JS (https://github.com/gazay/gon)
 gem "gon"
+# Semantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets. (http://github.com/doabit/semantic-ui-sass)
 gem 'semantic-ui-sass'
