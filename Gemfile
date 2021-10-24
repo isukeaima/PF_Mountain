@@ -109,3 +109,4 @@ gem "gmaps4rails"
 gem "geocoder"
 # Get your Rails variables in your JS (https://github.com/gazay/gon)
 gem "gon"
+gem 'semantic-ui-sass'

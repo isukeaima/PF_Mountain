@@ -3,7 +3,6 @@ let geocoder //変数の定義
 
 function initMap(){ //コールバック関数
   geocoder = new google.maps.Geocoder() //GoogleMapsAPIジオコーディングサービスにアクセス
-  console.log(document.getElementById('map'));
 
   let lat = 35.6594666
   let lng = 139.7005536
