@@ -20293,3 +20293,107 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 182ms (Views: 175.6ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for 125.12.241.186 at 2021-11-24 10:12:54 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (11.1ms)
+Started GET "/" for 125.12.241.186 at 2021-11-24 10:12:55 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22136ms (Views: 22135.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 23399ms (Views: 23376.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 125.12.241.186 at 2021-11-24 10:13:24 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 118ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 125.12.241.186 at 2021-11-24 10:13:28 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 178ms (Views: 159.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/sign_in" for 125.12.241.186 at 2021-11-24 10:13:34 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtDZ6tmRViSZaGk7IgvfA4YJwMLmZaykGMyVDjeosZQYja2z4G7pj9jVfA5r21cKj9RSUzGrqNtU6JhdZMeWDw==", "user"=>{"email"=>"a@a", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://572842b36fdb45ada03e55bba911a4bc.vfs.cloud9.ap-northeast-1.amazonaws.com/post_images
+Completed 302 Found in 436ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/post_images" for 125.12.241.186 at 2021-11-24 10:13:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/_list.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/_list.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 25]]
+  ↳ app/views/post_images/_list.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/_list.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 24]]
+  ↳ app/views/post_images/_list.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/_list.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 23]]
+  ↳ app/views/post_images/_list.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/_list.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 22]]
+  ↳ app/views/post_images/_list.html.erb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/_list.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 21]]
+  ↳ app/views/post_images/_list.html.erb:20
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_images"[0m
+  ↳ app/views/post_images/_list.html.erb:26
+  Rendered post_images/_list.html.erb (100.6ms)
+  Rendered post_images/index.html.erb within layouts/application (103.2ms)
+Completed 200 OK in 223ms (Views: 198.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/attachments/43bdb430e25a63051a624dad249b5e7e04d6c3ab/store/1dc7792a67b76a2bcf410aeb52e1cba3a3a321340aa72db6d0c172f25f3b/image" for 125.12.241.186 at 2021-11-24 10:13:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: 1dc7792a67b76a2bcf410aeb52e1cba3a3a321340aa72db6d0c172f25f3b
+Refile::App: [2021-11-24 10:13:35 +0000] GET "/43bdb430e25a63051a624dad249b5e7e04d6c3ab/store/1dc7792a67b76a2bcf410aeb52e1cba3a3a321340aa72db6d0c172f25f3b/image" 404 4.9ms
+
+Started GET "/attachments/6b80d4ef58b49b46267bd9fa56ab30db44316650/store/c980d1a40068e92fdbd20259ce1218536a0d25d8028b8cfe6688de9b2718/image" for 125.12.241.186 at 2021-11-24 10:13:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: c980d1a40068e92fdbd20259ce1218536a0d25d8028b8cfe6688de9b2718
+Started GET "/attachments/29e0b503375615b369e2b7f73b1142b1b0fdcb7a/store/d5277184b28a94fcc6645529598bb6ec9fad41c0d0a9e9bdd7eed1e54c69/image" for 125.12.241.186 at 2021-11-24 10:13:35 +0000
+Started GET "/attachments/6f7e3571a38f9fe4befcb404b8df3fc97fc45704/store/685ce024831101137132823ae298958265351d68a2415291d0153515bec3/image" for 125.12.241.186 at 2021-11-24 10:13:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: d5277184b28a94fcc6645529598bb6ec9fad41c0d0a9e9bdd7eed1e54c69
+Refile::App: [2021-11-24 10:13:35 +0000] GET "/29e0b503375615b369e2b7f73b1142b1b0fdcb7a/store/d5277184b28a94fcc6645529598bb6ec9fad41c0d0a9e9bdd7eed1e54c69/image" 404 0.7ms
+
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: 685ce024831101137132823ae298958265351d68a2415291d0153515bec3
+Refile::App: [2021-11-24 10:13:35 +0000] GET "/6f7e3571a38f9fe4befcb404b8df3fc97fc45704/store/685ce024831101137132823ae298958265351d68a2415291d0153515bec3/image" 404 0.7ms
+
+Started GET "/attachments/4a6b0962537272b972316758627d52bc25c1dfef/store/d4e53d9a2ed1b93e42e05a73f6bcbb169a96841ece685300fd6ff545dea6/image" for 125.12.241.186 at 2021-11-24 10:13:35 +0000
+Cannot render console from 125.12.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: d4e53d9a2ed1b93e42e05a73f6bcbb169a96841ece685300fd6ff545dea6
+Refile::App: [2021-11-24 10:13:35 +0000] GET "/6b80d4ef58b49b46267bd9fa56ab30db44316650/store/c980d1a40068e92fdbd20259ce1218536a0d25d8028b8cfe6688de9b2718/image" 404 5.6ms
+
+Refile::App: [2021-11-24 10:13:35 +0000] GET "/4a6b0962537272b972316758627d52bc25c1dfef/store/d4e53d9a2ed1b93e42e05a73f6bcbb169a96841ece685300fd6ff545dea6/image" 404 3.1ms
+
